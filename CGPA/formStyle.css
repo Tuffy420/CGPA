@@ -1,0 +1,97 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(
+    135deg,
+    white,
+    rgb(150, 150, 150),
+    rgb(23, 217, 111)
+  );
+}
+
+.form-wrapper {
+  width: 100%;
+  max-width: 400px; /* Reduced width */
+  padding: 30px; /* Reduced padding */
+  background-color: white;
+  box-shadow: 0 0 20px rgb(17, 220, 44); /* Darkest purple shadow */
+  border-radius: 15px; /* Rounded edges */
+}
+
+.title {
+  margin-bottom: 30px; /* Reduced margin */
+  font-weight: bold;
+  text-align: center;
+  font-size: 2em;
+  color: black;
+}
+
+.form-group {
+  margin: 15px 0; /* Reduced margin */
+}
+
+input {
+  font-size: 16px; /* Reduced font size */
+  padding: 8px 15px; /* Adjusted padding */
+  border-radius: 8px; /* Rounded edges */
+  border: 2px solid rgba(0, 0, 0, 0.7);
+  outline: none;
+  margin: 5px 0;
+}
+
+label {
+  font-size: 16px; /* Reduced font size */
+  font-weight: bold;
+}
+
+input[type="submit"] {
+  background-color: rgb(8, 131, 92);
+  color: white;
+  font-size: 20px;
+}
+
+input[type="submit"]:hover {
+  cursor: pointer;
+  background-color: rgb(35, 235, 171);
+}
+
+input[type="submit"]:active {
+  background-color: rgb(28, 80, 63);
+}
+
+.error #emailError,
+.error #passwordError,
+.error #phoneError {
+  color: red;
+}
+
+.error input {
+  border: 2px solid rgb(16, 15, 15);
+}
+
+.msg {
+  display: none;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  vertical-align: middle; /* Aligning radio buttons and checkboxes with text */
+  margin-right: 5px; /* Adding slight margin */
+}
+
+label[for="terms"] {
+  font-size: 14px; /* Reduced font size for checkbox label */
+}

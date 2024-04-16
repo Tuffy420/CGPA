@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap">
+  <link rel="stylesheet" href="formStyle.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="form-wrapper">
+      <h2 class="title">Login to Your Account</h2>
+      <form id="form" class="form">
+        <div class="form-group">
+          <label for="name">Email:</label>
+          <input id="email" type="email" placeholder="someone@gmail.com" required>
+          <p id="emailError"></p>
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input id="password" type="password" placeholder="Enter Password" required>
+          <p id="passwordError"></p>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number:</label>
+          <input id="phone" type="tel" placeholder="Enter Phone Number" required>
+          <p id="phoneError"></p>
+        </div>
+        <div class="form-group">
+          <label>Gender:</label>
+          <input type="radio" id="male" name="gender" value="male">
+          <label for="male">Male</label>
+          <input type="radio" id="female" name="gender" value="female">
+          <label for="female">Female</label>
+        </div>
+        <div class="form-group">
+          <input type="checkbox" id="terms" required>
+          <label for="terms">I agree to the terms and conditions</label>
+        </div>
+        <input type="submit" value="Login">
+      </form>
+    </div>
+    <div class="success-msg-container">
+      <h2 id="msg" class="msg">You have provided the correct details and your form will be processed</h2>
+    </div>
+  </div>
+  <script src="formScript.js"></script>
+</body>
+
+</html>
